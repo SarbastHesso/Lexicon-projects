@@ -1,0 +1,27 @@
+.control-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    font-size: 1.2rem;
+    .control-item {
+        .action {
+            color: #ecc010;
+            margin-bottom: .2rem;
+        }
+        .key {
+            img {
+                background-color: #fff;
+                margin-left: .5rem;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 940px) and (orientation: landscape) {
+  .control-container {
+    font-size: 1rem;
+    }
+}

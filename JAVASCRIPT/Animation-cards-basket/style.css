@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    box-shadow: 0 2px 5px 5px #00000018;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.container {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+li {
+    list-style: none;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.front {
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 1px 5px 5px #00000020;
+    width: 257px;
+    height: 496px;
+}
+
+/* .card:hover .front {
+    animation: twirl .2s ease-in forwards;
+}
+
+.card:hover .back {
+    animation: twirl .2s .2s ease-out forwards reverse;
+} */
+
+@keyframes twirl {
+    0% {transform: rotatey(0deg);}
+    100% {transform: rotatey(90deg);}
+}
+
+.front h2, .front img, .front p, .front button {
+    margin: 1.5rem 0;
+}
+
+.front p {
+    cursor: pointer;
+}
+
+.front button, .back button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+.back {
+    width: 257px;
+    height: 496px;
+    box-shadow: 0 1px 5px 5px #00000020;
+    transform: rotatey(90deg);
+    position: absolute;
+    top: 0;
+}
+
+
+.g-bg {
+    background-color: green;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.y-bg {
+    background-color: yellow;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.p-bg {
+    background-color: palevioletred;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-to-basket {
+    width: 40px;
+    position: absolute;
+    top: 40px;
+    right: 50%;
+    opacity: 0;
+    animation: move-to-basket 1s linear forwards;
+}
+
+@keyframes move-to-basket {
+    0% {opacity: 1;}
+    100% {opacity: 0; right: 40px;}
+}

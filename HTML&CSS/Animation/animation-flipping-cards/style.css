@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+}
+
+h1 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.panels {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.panel {
+    width: 100%;
+    display: grid;
+    position: relative;
+}
+
+.front, .back{
+    width: 100%;
+    padding: 6rem 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.front {
+    position: absolute;
+}
+
+.back {
+    transform: rotatey(90deg);
+}
+
+.panel:hover .front {
+    animation: twirl .2s ease-in forwards;
+}
+.panel:hover .back {
+    animation: twirl .2s .2s ease-out forwards reverse;
+}
+
+
+@keyframes twirl {
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(90deg);}
+}
+
+
+
+
+.panel-1 .front {
+    background-color: rgba(0, 0, 255, 0.518);
+}
+.panel-1 .back {
+    background-color: blue;
+}
+.panel-2 .front {
+    background-color: rgba(0, 128, 0, 0.511);
+}
+.panel-2 .back {
+    background-color: green;
+}
+.panel-3 .front {
+    background-color: rgba(128, 0, 128, 0.47);
+}
+.panel-3 .back {
+    background-color: purple;
+}
+.panel-4 .front {
+    background-color: rgba(255, 192, 203, 0.502);
+}
+.panel-4 .back {
+    background-color: pink;
+}
+.panel-5 .front {
+    background-color: rgba(255, 99, 71, 0.429);
+}
+.panel-5 .back {
+    background-color: tomato;
+}
+.panel-6 .front {
+    background-color: rgba(238, 130, 238, 0.475);
+}
+.panel-6 .back {
+    background-color: violet;
+}
+.panel-7 .front {
+    background-color: rgba(102, 205, 171, 0.486);
+}
+.panel-7 .back {
+    background-color: mediumaquamarine;
+}
+.panel-8 .front {
+    background-color: rgba(244, 165, 96, 0.482);
+}
+.panel-8 .back {
+    background-color: sandybrown;
+}

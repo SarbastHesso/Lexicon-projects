@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #130010ea;
+    opacity: .8;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar .nav-link{
+    color: #ffffff;
+    padding: .8rem 2.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .navbar {
+        gap: 1.5rem;
+    }
+
+    .navbar .nav-link{
+        padding: .8rem 2rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .navbar {
+        gap: 1rem;
+    }
+
+    .navbar .nav-link{
+        padding: .8rem 1.5rem;
+    }
+}

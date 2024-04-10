@@ -1,0 +1,131 @@
+/* general styling  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    height: 100vh;
+    background-image: url("bg.jpg");
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* header styling  */
+header {
+    margin: 2rem 0;
+    padding: .5rem 0;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* main styling  */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.utbildning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #ffffff;
+    animation-name: bg;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bg {
+    0% {background-color: #00000080}
+    50% {background-color: #00000050}
+    100% {background-color: #00000080}
+}
+
+.utbildning h2 {
+    align-self: center;
+    font-size: 1.8rem;
+    padding-bottom: .7rem;
+    margin-bottom: .8rem;
+    border-bottom: 2px solid #ffffff;
+}
+
+.utbildning h3 {
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+}
+
+.utbildning p {
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+
+.utbildning ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.utbildning ul li {
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.utbildning ul li span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.github img {
+    width: 1.5rem;
+    margin-right: 1rem;
+    background-color: bisque;
+    border-radius: .5rem;
+}
+
+.github a {
+    text-decoration: none;
+    color: bisque;
+}
+
+.github a:hover {
+    
+    color: #ffffff;
+}
+
+/* footer styling  */
+footer {
+    background-color: #00000080;
+    text-align: center;
+    padding: 1.2rem;
+    color: bisque;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

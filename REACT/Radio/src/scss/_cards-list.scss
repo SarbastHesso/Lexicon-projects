@@ -1,0 +1,32 @@
+@use './colors' as *;
+.cards-list {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.audio-container {
+    background-color: $light;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    display: none;
+    audio::-webkit-media-controls-panel {
+      background-color: $light;
+    }
+    .close-icon {
+        color: $danger;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+.show-controls {
+    display: flex;
+}
+

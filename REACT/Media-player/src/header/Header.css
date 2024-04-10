@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    background-color: #00000075;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header span {
+    font-size: 2rem;
+    color: #ffffff;
+}
+

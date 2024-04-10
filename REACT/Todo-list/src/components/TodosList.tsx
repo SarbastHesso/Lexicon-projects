@@ -1,0 +1,32 @@
+import TodosListItem from "./TodosListItem";
+import { ITodo } from "../interfaces";
+
+interface ITodosListProps {
+  todos: ITodo[];
+  completedToggle: (todo: ITodo) => void;
+  deletTodo: (todo: ITodo) => void;
+  moveTodo: (todo: ITodo, direction: string) => void;
+  editTodo: (todo: ITodo) => void;
+}
+
+
+const todosList: React.FC<ITodosListProps> = (props) => {
+  return (
+    <div className="todos-list">
+      {props.todos.map((todo) => {
+        return (
+          <TodosListItem
+            key={todo.id}
+            todo={todo}
+            completedToggle={props.completedToggle}
+            deletTodo={props.deletTodo}
+            moveTodo={props.moveTodo}
+            editTodo={props.editTodo}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+export default todosList

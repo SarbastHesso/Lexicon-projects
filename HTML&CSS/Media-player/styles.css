@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background: #060606;
+   background-image: url("bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.material-icons {
+   cursor: pointer;
+}
+
+/* Header  */
+header {
+    padding: 1rem;
+    color: #ffffff;
+    margin: .5rem 0 1rem;
+    box-shadow: 0 3px 5px #ffffff;
+}
+
+ header h3 {
+    font-size: 2rem;
+ }
+
+ header span {
+    font-size: 2rem !important;
+    cursor: pointer;
+ }
+
+ /* main  */
+ main {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+ }
+
+ section {
+    flex: 1;
+    padding: 1rem;
+    box-shadow: 0 3px 5px #ffffff;
+ }
+
+ /* playlist section  */
+ .playlist {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+ }
+
+ .playlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 1px 2px 2px #ffffff;
+    opacity: .7;
+ }
+
+ #rocket {
+    opacity: 1;
+ }
+
+ #rocket span {
+    color: #ffffff;
+ }
+
+.song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .item-img {
+    margin-right: 1rem;
+    border: 2px solid #365864;
+    height: 75px;
+    width: 75px;
+ }
+
+ .songer {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+ }
+
+ .song-name {
+    color: #aeaea6;
+    padding: .4rem;
+    font-size: 1.2rem;
+ }
+
+ .playlist span {
+    color: #aeaea6;
+    font-size: 1.5rem !important;
+    margin-right: 1rem;
+ }
+
+ /* section 2  */
+ .play-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+ }
+ 
+ /* Large image  */
+ .L-img {
+    border: 3px solid #aeaea6;
+    margin: 0 auto 3rem;
+ }
+
+ /* info about the played song  */
+ .played-song {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+ }
+
+ .played-song .add {
+    color: #ffffff;
+    font-size: 2rem !important;
+ }
+
+ .played-song .favorite {
+    font-size: 2rem !important;
+    color: #aeaea6;
+    opacity: .7;
+ }
+
+ .played-songer {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+ }
+
+ .played-song-name {
+    font-size: 1.5rem;
+    color: #aeaea6;
+ }
+
+ /* timeline  */
+ .timeline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+ }
+
+ .timeline span {
+    color: #aeaea6;
+ }
+
+ .time-long {
+    flex: 1;
+    height: .6rem;
+    background-color: #383838;
+    border-radius: .2rem;
+    margin: 0 1rem;
+    position: relative;
+ }
+
+ .progress {
+   height: .6rem;
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: .4rem;
+    position: absolute;
+ }  
+
+ /* control  */
+ .control {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+ #repeat-btn {
+   font-size: 2rem !important;
+   color: #ffffff;
+ }
+
+ #rewind-btn {
+   font-size: 3rem !important;
+   color: #ffffff;
+ }
+
+ #forward-btn {
+   font-size: 3rem !important;
+   color: #ffffff;
+ }
+
+ #play-pause-btn {
+   font-size: 5rem !important;
+   color: #ffffff;
+ }
+
+ #shuffle-btn {
+   font-size: 2rem !important;
+   color: #aeaea6;
+   opacity: .7;
+ }
+
+@media screen and (max-width: 1024px) {
+   main {
+      flex-direction: column-reverse;
+      height: 100%;
+   }
+
+   .play-section {
+      margin-bottom: 4rem;
+   }
+}
+
+ @media screen and (max-width: 768px) {
+   .container{
+      max-width: 100%;
+   }
+
+   header, .playlist {
+      box-shadow: none;
+   }
+
+   .L-img {
+      margin: 2rem auto 3rem;
+   }
+
+   .play-section {
+      box-shadow: 0 2px 0 #ffffff;
+      padding: 1rem 1rem 4rem;
+   }
+
+   .played-songer, .played-song-name, .played-song-name {
+      font-size: 1.4rem;
+   }
+
+   .songer, .song-name {
+      font-size: 1.2rem;
+   }
+}
+
+@media screen and (max-width: 425px) {
+   header h3 {
+      font-size: 1.7rem;
+   }
+
+   .played-songer, .played-song-name, .played-song-name {
+      font-size: 1.2rem;
+   }
+
+   .songer, .song-name {
+      font-size: 1rem;
+   }
+
+}
+

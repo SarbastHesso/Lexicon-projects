@@ -1,0 +1,186 @@
+/* General styling  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poiret One', sans-serif;
+}
+
+a , h1 {
+    font-family: 'Spirax', sans-serif;
+}
+
+/* header styling  */
+header {
+    background-color: #130010ea;
+    opacity: .8;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.5rem;
+    padding: 1rem 2.5rem;
+}
+
+
+/* global classes  */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* init design for each section  */
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: #ffffff;
+    opacity: .8;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* center, viewport heigt and background image for all sections  */
+#hot, 
+#juicy, 
+#cosy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* the first section/hot-background-image-url  */
+#hot {
+    background-image: url("hot.jpg");
+}
+
+/* the second section/juicy-background-image-url  */
+#juicy {
+    background-image: url("juicy.jpg");
+}
+
+/* the third section/cosy-background-image-url  */
+#cosy {
+    background-image: url("cosy.jpg");
+}
+
+
+/* styling to title, text och pricelist for each section  */
+.section-title {
+    font-size: 6rem;
+    color: rgb(159, 3, 3);
+    font-weight: bold;
+}
+
+.p-1 {
+    background-color: rgb(159, 3, 3);
+    padding: 1rem 2rem;
+    align-self: stretch;
+    position: relative;
+    right: 6rem;
+}
+
+.p-2 {
+    background-color: rgb(159, 3, 3);
+    padding: 1rem 2rem;  
+    align-self: stretch;
+    position: relative;
+    left: 6rem;
+}
+
+ul {
+    background-color: #000000;
+    padding: 1.3rem 3rem;
+    align-self: stretch;
+}
+
+/* one pricelist-item  */
+ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separator {
+    height: 1rem;
+    background-color: rgb(159, 3, 3);
+}
+
+
+
+
+/* responsive  */
+@media screen and (max-width: 992px){
+    header nav a {
+    font-size: 1.5rem;
+}
+
+.flex {
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    font-size: 5rem;
+}
+
+}
+
+@media screen and (max-width: 768px){
+    .p-1 {
+    position: relative;
+    right: 0;
+}
+
+.p-2 {
+    position: relative;
+    left: 0;
+}
+}
+
+@media screen and (max-width: 450px){
+    .container {
+        width: 90%;
+    }
+
+    header nav a {
+    padding: 1rem;
+}
+
+.flex .p-1 {
+    display: none;
+}
+
+.flex {
+    gap: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#cosy  ul li:last-of-type {
+    display: block;
+}
+
+}

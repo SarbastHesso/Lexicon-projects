@@ -1,0 +1,108 @@
+/* general styling  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ededed;
+}
+
+/* A container to all elements  */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Styling to header section  */
+header h1 {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    background-color: #e6e6e6;
+}
+
+header p {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+header img {
+    width: 240px;
+}
+
+/* styling to main section  */
+main {
+    margin-bottom: 3rem;
+}
+
+/* styling to ingredienser section in main section  */
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.section-1 img {
+    width: 600px;
+    opacity: .5;
+}
+
+.section-1 div {
+    padding: 1rem;
+}
+
+.section-1 div h3 {
+    font-size: 2rem;
+}
+
+.section-1 div ul {
+    padding: 2rem;
+}
+
+.section-1 div ul li {
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+
+/* styling to method section in main section  */
+.section-2 h3 {
+    font-size: 2rem;
+}
+
+.section-2 ol {
+    padding: 2rem;
+}
+
+.section-2 ol li {
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+
+/* styling the footer  */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer span {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+
+footer a {
+    font-size: 1.2rem;
+    color: #ffffff;
+}

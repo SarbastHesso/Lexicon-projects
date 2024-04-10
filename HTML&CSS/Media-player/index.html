@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Media player</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header  -->
+      <header>
+        <div class="flex">
+          <span class="material-icons">arrow_back_ios</span>
+          <h3>Playlist - Moody</h3>
+          <span class="material-icons">more_vert</span>
+        </div>
+      </header>
+      <!-- main  -->
+      <main>
+        <!-- section 1 / playlist  -->
+        <section class="playlist">
+          <div class="playlist-item" id="rocket">
+            <div class="song">
+              <img class="item-img" src="https://picsum.photos/200" alt="" />
+              <div class="item-ifo">
+                <p class="songer">A Rocket to the moon</p>
+                <p class="song-name">Like we used to</p>
+              </div>
+            </div>
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="playlist-item">
+            <div class="song">
+              <img class="item-img" src="https://picsum.photos/300" alt="" />
+              <div class="item-ifo">
+                <p class="songer">John Legend</p>
+                <p class="song-name">Save the room</p>
+              </div>
+            </div>
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="playlist-item">
+            <div class="song">
+              <img class="item-img" src="https://picsum.photos/320" alt="" />
+              <div class="item-ifo">
+                <p class="songer">John Legend</p>
+                <p class="song-name">We just don't care</p>
+              </div>
+            </div>
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="playlist-item">
+            <div class="song">
+              <img class="item-img" src="https://picsum.photos/310" alt="" />
+              <div class="item-ifo">
+                <p class="songer">A Rocket to the moon</p>
+                <p class="song-name">Dakota</p>
+              </div>
+            </div>
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="playlist-item">
+            <div class="song">
+              <img class="item-img" src="https://picsum.photos/360" alt="" />
+              <div class="item-ifo">
+                <p class="songer">Zedd & Alone Blacc</p>
+                <p class="song-name">Candyman</p>
+              </div>
+            </div>
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="playlist-item">
+            <div class="song">
+              <img class="item-img" src="https://picsum.photos/335" alt="" />
+              <div class="item-ifo">
+                <p class="songer">Rag'n'Bone Man</p>
+                <p class="song-name">Human</p>
+              </div>
+            </div>
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="playlist-item">
+            <div class="song">
+              <img class="item-img" src="https://picsum.photos/200/300" alt="" />
+              <div class="item-ifo">
+                <p class="songer">The Pixies</p>
+                <p class="song-name">Where Is My Mind</p>
+              </div>
+            </div>
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="playlist-item">
+            <div class="song">
+              <img class="item-img" src="https://picsum.photos/200/200" alt="" />
+              <div class="item-ifo">
+                <p class="songer">Cyndi Lauper</p>
+                <p class="song-name">Time After Time</p>
+              </div>
+            </div>
+            <span class="material-icons">play_circle</span>
+          </div>
+        </section>
+
+        <!-- section 2/song image, songinfo, timeline och buttons  -->
+        <section class="play-section">
+            <img class="L-img" src="https://picsum.photos/200" alt="">
+            <div class="played-song">
+                <span class="material-icons add">add_circle</span>
+                <div class="played-song-info">
+                    <p class="played-songer">A Rocket to the moon</p>
+                    <p class="played-song-name">Like we used to</p>
+                </div>
+                <span class="material-icons favorite">favorite</span>
+            </div>
+            <div class="timeline">
+                <span>0:40</span>
+                <div class="time-long">
+                    <div class="progress"></div>
+                </div>
+                <span>3:42</span>
+            </div>
+            <div class="control">
+              <span class="material-icons" id="repeat-btn">repeat</span>
+              <span class="material-icons" id="rewind-btn">fast_rewind</span>
+              <span class="material-icons" id="play-pause-btn">play_circle</span>
+              <span class="material-icons" id="forward-btn">fast_forward</span>
+              <span class="material-icons" id="shuffle-btn">shuffle</span>
+            </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
